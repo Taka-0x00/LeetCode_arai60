@@ -9,7 +9,7 @@ struct ListNode* detectCycle(struct ListNode* head)
     {
         for(int i=0;i<visitedCounter;i++)
         {
-            if(visited[visitedCounter] == currentPoint)
+            if(visited[i] == currentPoint)
             {
                 return currentPoint;
             }
